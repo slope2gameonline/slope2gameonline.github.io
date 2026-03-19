@@ -560,6 +560,13 @@ img {
     background-color: #000;
 }
 
+@media (max-width: 600px) {
+    .game-container,
+    .game-container.game-bloodmoney {
+        aspect-ratio: 1 / 1; /* Taller square ratio for mobile */
+    }
+}
+
 .game-container.game-bloodmoney iframe {
     width: 125%;
     /* Internal width for scaling */
