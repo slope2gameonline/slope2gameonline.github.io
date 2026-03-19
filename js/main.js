@@ -1,25 +1,32 @@
-// URL Normalization for Game Pages
-// Redirects .html and trailing slashes to the clean URL
+// URL Normalization for All Pages
+// Redirects .html, index.html, and redundant trailing slashes to clean URLs
 (function() {
-    if (typeof ALL_GAMES !== 'undefined') {
-        const path = window.location.pathname; // e.g., '/drift-boss.html', '/drift-boss/', or '/drift-boss'
-        let cleanPath = path;
+    const path = window.location.pathname; // e.g., '/drift-boss.html', '/about-us/index.html', '/404.html'
+    let cleanPath = path;
 
-        // Remove .html extension
-        if (cleanPath.endsWith('.html')) {
-            cleanPath = cleanPath.slice(0, -5);
-        }
+    // 1. Remove index.html (leaves the trailing slash)
+    if (cleanPath.endsWith('index.html')) {
+        cleanPath = cleanPath.slice(0, -10); // '/about-us/index.html' -> '/about-us/'
+        if (cleanPath === '') cleanPath = '/';
+    }
+    // 2. Remove .html for other files
+    else if (cleanPath.endsWith('.html')) {
+        cleanPath = cleanPath.slice(0, -5); // '/404.html' -> '/404'
+    }
 
-        // Remove trailing slash if length > 1
-        if (cleanPath.length > 1 && cleanPath.endsWith('/')) {
-            cleanPath = cleanPath.slice(0, -1);
+    // 3. Remove trailing slash ONLY if it matches a valid game slug
+    // (We keep trailing slashes for directories like /about-us/ to avoid infinite 301 loops)
+    if (cleanPath.length > 1 && cleanPath.endsWith('/')) {
+        const potentialSlug = cleanPath.slice(0, -1);
+        if (typeof ALL_GAMES !== 'undefined' && ALL_GAMES.includes(potentialSlug)) {
+            cleanPath = potentialSlug;
         }
+    }
 
-        // Check if path changed and it's a valid game page
-        if (cleanPath !== path && ALL_GAMES.includes(cleanPath)) {
-            const newUrl = window.location.origin + cleanPath + window.location.search + window.location.hash;
-            window.location.replace(newUrl);
-        }
+    // 4. Redirect if the URL was cleaned
+    if (cleanPath !== path) {
+        const newUrl = window.location.origin + cleanPath + window.location.search + window.location.hash;
+        window.location.replace(newUrl);
     }
 })();
 
