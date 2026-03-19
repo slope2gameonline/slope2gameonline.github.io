@@ -1489,6 +1489,39 @@ body.theater-mode .game-how-to-panel.open {
     gap: 0.5rem;
 }
 
+@media (max-width: 600px) {
+    .footer {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+    }
+
+    .footer-col {
+        min-width: 140px;
+        flex: 1 1 140px;
+    }
+
+    .footer-col:first-child {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    
+    .footer-col h3, .footer-h3-style {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .footer-links {
+        gap: 0.4rem;
+    }
+    
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+}
+
 .footer-bottom {
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
