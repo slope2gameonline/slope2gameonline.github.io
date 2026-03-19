@@ -1,3 +1,28 @@
+// URL Normalization for Game Pages
+// Redirects .html and trailing slashes to the clean URL
+(function() {
+    if (typeof ALL_GAMES !== 'undefined') {
+        const path = window.location.pathname; // e.g., '/drift-boss.html', '/drift-boss/', or '/drift-boss'
+        let cleanPath = path;
+
+        // Remove .html extension
+        if (cleanPath.endsWith('.html')) {
+            cleanPath = cleanPath.slice(0, -5);
+        }
+
+        // Remove trailing slash if length > 1
+        if (cleanPath.length > 1 && cleanPath.endsWith('/')) {
+            cleanPath = cleanPath.slice(0, -1);
+        }
+
+        // Check if path changed and it's a valid game page
+        if (cleanPath !== path && ALL_GAMES.includes(cleanPath)) {
+            const newUrl = window.location.origin + cleanPath + window.location.search + window.location.hash;
+            window.location.replace(newUrl);
+        }
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
     // console.log('Slope 2: Scripts initializing...');
 
