@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Down Slope</title>
+    <meta name="description" content="Slide Down Slope challenges your reaction speed on a fast-moving downhill track. Keep control, avoid hazards, and aim for the longest run possible.">
+    <link rel="icon" type="image/webp" href="/favicon.webp">
+    <link rel="canonical" href="https://slope2game.online/slide-down-slope">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://slope2game.online/slide-down-slope">
+    <meta property="og:title" content="Slide Down Slope">
+    <meta property="og:description" content="Slide Down Slope challenges your reaction speed on a fast-moving downhill track. Keep control, avoid hazards, and aim for the longest run possible.">
+    <meta property="og:image" content="https://slope2game.online/assets/slide-down-slope-cover.webp">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Slide Down Slope",
+      "description": "Slide Down Slope challenges your reaction speed on a fast-moving downhill track. Keep control, avoid hazards, and aim for the longest run possible.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Slope 2 Online"
+      },
+      "datePublished": "2026-03-19T08:14:00.000Z",
+      "dateModified": "2026-03-19T08:14:00.000Z",
+      "author": {
+        "@type": "Person",
+        "name": "Admin"
+      }
+    }
+    </script>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Slide Down Slope">
+    <meta name="twitter:description" content="Slide Down Slope challenges your reaction speed on a fast-moving downhill track. Keep control, avoid hazards, and aim for the longest run possible.">
+    <meta name="twitter:image" content="https://slope2game.online/assets/slide-down-slope-cover.webp">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://slope2game.online/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Slide Down Slope"
+      }]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Slide Down Slope",
+      "operatingSystem": "Any",
+      "applicationCategory": "GameApplication",
+      "description": "Slide Down Slope challenges your reaction speed on a fast-moving downhill track. Keep control, avoid hazards, and aim for the longest run possible.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    }
+    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2FY4F87FSH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2FY4F87FSH');
+</script>
+</head>
+<body>
+    <div id="preloader"><div class="cube-loader"></div></div>
+    <header class="header">
+        <div class="container nav">
+            <div class="logo"><a href="/">Slope<span> 2</span></a></div>
+            <nav class="nav-links">
+                <a href="/all.games/">All Games</a>
+                <a href="/adventure.games/">Adventure</a>
+                <a href="/sports.games/">Sports</a>
+                <a href="/endless-runner.games/">Endless Runner</a>
+            </nav>
+            <div class="header-actions">
+                <form class="header-search" action="/search/" method="get">
+                    <input type="text" name="q" placeholder="Search here..." required autocomplete="off">
+                    <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                </form>
+                <a href="/favorites/" class="theme-toggle" aria-label="My Favorites" title="My Favorites"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a>
+                <button class="theme-toggle" id="btn-random" aria-label="Random Game" title="Random Game"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg></button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode"><svg class="icon-moon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><svg class="icon-sun" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button>
+                <div class="menu-toggle"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero container reveal">
+            <nav class="breadcrumbs"><a href="/">Home</a><span>›</span><strong>Slide Down Slope</strong></nav>
+            <h1>Slide Down Slope</h1>
+            <p>Slide, dodge, and survive in Slide Down Slope. Experience endless downhill action as you navigate tricky barriers and aim for the longest run possible.</p>
+            
+            <div class="game-container" id="game-container">
+                <div class="game-overlay" id="game-overlay">
+                    <img src="/assets/slide-down-slope-cover.webp" alt="Slide Down Slope - Neon endless runner" class="game-cover">
+                    <button class="play-btn-large" id="play-btn-large" aria-label="Play Game"><svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="var(--clr-primary)" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></button>
+                </div>
+                <iframe data-src="https://gamea.azgame.io/slide-down/" id="game-iframe" title="Slide Down Slope Online" allowfullscreen></iframe>
+            </div>
+            <div class="game-actions container">
+                <button class="action-btn" id="btn-theater" title="Theater Mode"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg><span>Expand</span></button>
+                <button class="action-btn" id="btn-fullscreen" title="Fullscreen"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg><span>Fullscreen</span></button>
+                <button class="action-btn" id="btn-favorite" title="Save to Favorites"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><span>Favorite</span></button>
+                <button class="action-btn" id="btn-share" title="Copy Link"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg><span>Share</span></button>
+                <button type="button" class="action-btn" id="btn-how-to" title="How to Play"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg><span>How to Play</span></button>
+
+            </div>
+            <div class="game-how-to-panel" id="game-how-to-panel">
+                <div class="game-how-to-panel-header">
+                    <div class="panel-h3-style">Game Controls</div>
+                    <button type="button" class="game-how-to-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="game-how-to-panel-body">
+                    <ul>
+                        <li><span class="key">←</span><span class="key-sep">·</span><span class="key">A</span><span class="key-desc">Move left</span></li>
+                        <li><span class="key">→</span><span class="key-sep">·</span><span class="key">D</span><span class="key-desc">Move right</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="games-section container reveal">
+            <h2 class="section-title">Trending Games</h2>
+            <div class="game-grid reveal">
+                <a href="/fall-guyz" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/fall-guyz-cover.webp" alt="Fall Guyz" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Fall Guyz</span></div>
+                </a>
+                <a href="/bloodmoney" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/bloodmoney-cover.webp" alt="BLOODMONEY" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">BLOODMONEY</span></div>
+                </a>
+                <a href="/drift-boss" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/drift-boss-cover.webp" alt="Drift Boss" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Drift Boss</span></div>
+                </a>
+                <a href="/subway-surfers" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/subway-surfers-cover.webp" alt="Subway Surfers" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Subway Surfers</span></div>
+                </a>
+                <a href="/snow-rush-3d" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/snow-rush-3d-cover.webp" alt="Snow Rush 3D" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Snow Rush 3D</span></div>
+                </a>
+                <a href="/slope-multiplayer" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/slope-multiplayer-cover.webp" alt="Slope Multiplayer" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Slope Multiplayer</span></div>
+                </a>
+                <a href="/two-ball-3d-dark" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/two-ball-3d-dark-cover.webp" alt="Two Ball 3D: Dark" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Two Ball 3D: Dark</span></div>
+                </a>
+                <a href="/speed-stars" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/speed-stars-cover.webp" alt="Speed Stars" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Speed Stars</span></div>
+                </a>
+                <a href="/ski-frenzy" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/ski-frenzy-cover.webp" alt="Ski Frenzy" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Ski Frenzy</span></div>
+                </a>
+                <a href="/slope-snowball" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/slope-snowball-cover.webp" alt="Slope Snowball" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Slope Snowball</span></div>
+                </a>
+                <a href="/dinosaur-city-hunting-destroy" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/dinosaur-city-hunting-destroy-cover.webp" alt="Dinosaur City Hunting Destroy" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Dinosaur City Hunting Destroy</span></div>
+                </a>
+                <a href="/survive-lava-for-brainrots" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/survive-lava-for-brainrots-cover.webp" alt="Survive Lava for Brainrots!" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Survive Lava for Brainrots!</span></div>
+                </a>
+                <a href="/finns-ascent" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/finns-ascent-cover.webp" alt="Finn's Ascent" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Finn's Ascent</span></div>
+                </a>
+                <a href="/up-together" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/up-together-cover.webp" alt="Up Together" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Up Together</span></div>
+                </a>
+                <a href="/slope-rider" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/slope-rider-cover.webp" alt="Slope Rider" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Slope Rider</span></div>
+                </a>
+            </div>
+        </section>
+
+
+        <article class="content-section container reveal">
+            <h2>About Slide Down Slope</h2>
+            <p>Slide Down Slope is a fast-paced rolling game that challenges players to guide a glowing ball down infinite, steep slopes filled with unpredictable hazards. Every run pushes your reflexes to the limit as the track constantly changes, speed steadily increases, and one small mistake immediately ends the attempt.</p>
+            <p>The objective is simple in theory: survive as long as possible and achieve the highest distance score. In practice, sudden drops, narrow lanes, moving obstacles, and jump boosters create constant tension. Slide Down rewards calm control and precision steering rather than aggressive movement.</p>
+
+            <h2>What Is Slide Down Slope?</h2>
+            <p>Slide Down Slope belongs to the endless slope runner genre. Players control a ball that automatically rolls downhill across a neon 3D track suspended in space. There are no checkpoints and no revive mechanics. Once the ball crashes or falls off the edge, the run ends instantly.</p>
+            <p>Core principles of the game include:</p>
+            <ul>
+                <li>Continuous forward momentum</li>
+                <li>Increasing speed over time</li>
+                <li>Procedurally shifting track layouts</li>
+                <li>Distance-based scoring system</li>
+            </ul>
+            <p>Unlike structured level-based games, Slide Down Slope focuses entirely on survival duration and high-score competition.</p>
+
+            <h2>Gameplay Overview and Key Features</h2>
+            <p>Below is a breakdown of the main gameplay elements:</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Feature</th><th>Description</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Genre</td><td>Endless 3D slope runner</td></tr>
+                        <tr><td>Core Mechanic</td><td>Left/right steering of a rolling ball</td></tr>
+                        <tr><td>Difficulty Scaling</td><td>Gradual acceleration with denser hazards</td></tr>
+                        <tr><td>Obstacles</td><td>Gaps, red blocks, narrow paths, moving objects</td></tr>
+                        <tr><td>Boosters</td><td>Jump launchers and speed boosts</td></tr>
+                        <tr><td>Visual Style</td><td>Futuristic neon environments</td></tr>
+                        <tr><td>Scoring</td><td>Based on distance traveled</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>The neon aesthetic enhances visibility while maintaining a clean, distraction-free interface.</p>
+
+            <h2>How to Play Slide Down Slope Online</h2>
+            <p>Slide Down Slope is playable directly in a web browser without downloads. Once the run begins, the ball moves automatically, and you control only its lateral direction.</p>
+            <h3>Steer the Ball to Avoid Obstacles</h3>
+            <p>Use the Left/Right Arrow keys or A/D keys to shift across lanes. Avoid red hazards, sharp edges, and sudden gaps.</p>
+            <h3>Adapt to Increasing Speed</h3>
+            <p>As distance increases, the game accelerates. Reaction windows shrink, and obstacle density rises. Anticipation becomes more important than reaction.</p>
+            <h3>Use or Avoid Jump Boosters</h3>
+            <p>Jump boosters act as launch platforms. They can:</p>
+            <ul>
+                <li>Send you over dangerous sections</li>
+                <li>Launch you into advanced zones</li>
+                <li>Increase risk if landing areas are unsafe</li>
+            </ul>
+            <p>Strategic decision-making matters. Not every booster is beneficial.</p>
+            <h3>Retry and Improve</h3>
+            <p>Each failed run provides feedback. Since restarts are instant, players quickly enter another attempt to beat their previous record.</p>
+
+            <h2>Easy Tips for Higher Scores in Slide Down Slope</h2>
+            <p>To extend your survival time, apply the following principles:</p>
+            <ul>
+                <li>Make small steering adjustments instead of holding keys</li>
+                <li>Stay near the center of the track to maximize reaction options</li>
+                <li>Avoid unnecessary jump boosters during high-speed sections</li>
+                <li>Look ahead rather than focusing directly on the ball</li>
+                <li>Maintain composure when speed increases</li>
+            </ul>
+            <p>Most crashes occur due to overcorrection rather than obstacle complexity.</p>
+
+            <h2>Slide Down Slope and Similar Games</h2>
+            <p>Slide Down Slope shares similarities with other reflex-based slope games but introduces its own risk mechanics through jump boosters.</p>
+            <ul>
+                <li><a href="/slope-3-online">Slope 3 Online</a> increases speed dramatically but focuses less on vertical jump mechanics.</li>
+                <li><a href="/two-ball-3d-dark">Two Ball 3D: Dark</a> emphasizes balance on floating tracks with dual-player options.</li>
+                <li><a href="/g-switch-2">G-Switch 2</a> replaces downhill motion with gravity-flip mechanics.</li>
+            </ul>
+            <p>While these titles test reflexes differently, Slide Down Slope stands out for its combination of jump boosters and escalating downhill momentum.</p>
+
+            <h2>Comparative Analysis</h2>
+            <h3>Slide Down Slope vs Traditional Slope Games</h3>
+            <p>Traditional slope-style games focus strictly on lateral control. Slide Down introduces vertical displacement via boosters, creating additional risk layers.</p>
+            <h3>Slide Down Slope vs Rhythm Runners</h3>
+            <p>Unlike rhythm-based titles where obstacles align with music timing, Slide Down Slope is reactive and unpredictable.</p>
+            <h3>Slide Down Slope vs Character-Based Runners</h3>
+            <p>Games featuring characters and power-ups often provide temporary protection or upgrades. Slide Down Slope keeps mechanics minimalist and entirely skill-dependent.</p>
+
+            <h2>Let's Conquer the Best Distance Ever</h2>
+            <p>Slide Down Slope delivers a focused endless running experience built on speed scaling, hazard density, and clean control mechanics. Its instant restart loop and distance-based scoring create strong replay value for players aiming to beat personal records.</p>
+            <p>Mastery comes from controlled steering, anticipation, and disciplined decision-making around boosters. Every run presents a new layout, and every attempt sharpens reflexes.</p>
+            <p>If you enjoy high-speed 3D slope challenges that rely purely on skill and precision, Slide Down Slope offers a demanding but rewarding downhill survival experience.</p>
+        
+        <!-- Author Box -->
+        <div class="author-box" style="margin-top:2rem;padding:1.5rem;background:var(--bg-glass);border:1px solid rgba(255,255,255,0.1);border-radius:12px;display:flex;align-items:center;gap:1rem;">
+            <div class="author-avatar" style="width:60px;height:60px;border-radius:50%;background:var(--clr-primary);display:flex;justify-content:center;align-items:center;font-weight:bold;color:#111;font-size:1.5rem;">A</div>
+            <div class="author-info">
+                <div class="author-name" style="margin:0 0 0.5rem 0;color:var(--clr-heading);font-weight:bold;">Published by Admin</div>
+                <p style="margin:0;font-size:0.9rem;color:rgba(255,255,255,0.7);">Publish Date: <time itemprop="datePublished" datetime="2026-03-19">2026-03-19</time> &bull; Latest update: <time itemprop="dateModified" datetime="2026-03-19">2026-03-19</time></p>
+            </div>
+        </div>
+    </article>
+    </main>
+        <footer class="footer reveal">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="footer-h3-style">Slope 2</div>
+                <p style="color: rgba(255,255,255,0.7); max-width: 300px;">Your premium destination for the best 3D
+                    endless runners and casual web games. Play instantly in your browser!</p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-h3-style">Categories</div>
+                <div class="footer-links">
+                    <a href="/arcade.games/">Arcade</a>
+                    <a href="/adventure.games/">Adventure</a>
+                    <a href="/sports.games/">Sports</a>
+                    <a href="/endless-runner.games/">Endless Runner</a>
+                    <a href="/skills.games/">Skills</a>
+                    <a href="/all.games/">All Games</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-h3-style">Legal & Info</div>
+                <div class="footer-links">
+                    <a href="/about-us/">About Us</a>
+                    <a href="/contact-us/">Contact Us</a>
+                    <a href="/dmca/">DMCA</a>
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                    <a href="/terms-of-service/">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                &copy; <span id="current-year"></span> Slope 2. All rights reserved. Not affiliated with the original
+                developers of Slope 2.
+            </div>
+        </div>
+    </footer>
+    <script src="/js/games_data.js"></script><script src="/js/main.js"></script>
+
+    <button id="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to ensure you get the best experience on our website. <a href="/privacy-policy/">Learn more</a></p>
+        <button id="btn-accept-cookies" class="btn-accept">Got it!</button>
+    </div>
+</body>
+</html>
+
+
+
+

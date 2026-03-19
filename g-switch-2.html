@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Switch 2</title>
+    <meta name="description" content="Challenge gravity in G-Switch 2 and flip at the perfect moment to survive. React instantly, avoid deadly gaps, and compete in intense multiplayer runs.">
+    <link rel="icon" type="image/webp" href="/favicon.webp">
+    <link rel="canonical" href="https://slope2game.online/g-switch-2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://slope2game.online/g-switch-2">
+    <meta property="og:title" content="G-Switch 2">
+    <meta property="og:description" content="Challenge gravity in G-Switch 2 and flip at the perfect moment to survive. React instantly, avoid deadly gaps, and compete in intense multiplayer runs.">
+    <meta property="og:image" content="https://slope2game.online/assets/g-switch-2-cover.webp">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "G-Switch 2",
+      "description": "Challenge gravity in G-Switch 2 and flip at the perfect moment to survive. React instantly, avoid deadly gaps, and compete in intense multiplayer runs.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Slope 2 Online"
+      },
+      "datePublished": "2026-03-19T08:09:00.000Z",
+      "dateModified": "2026-03-19T08:09:00.000Z",
+      "author": {
+        "@type": "Person",
+        "name": "Admin"
+      }
+    }
+    </script>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="G-Switch 2">
+    <meta name="twitter:description" content="Challenge gravity in G-Switch 2 and flip at the perfect moment to survive. React instantly, avoid deadly gaps, and compete in intense multiplayer runs.">
+    <meta name="twitter:image" content="https://slope2game.online/assets/g-switch-2-cover.webp">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://slope2game.online/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "G-Switch 2"
+      }]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "G-Switch 2",
+      "operatingSystem": "Any",
+      "applicationCategory": "GameApplication",
+      "description": "Challenge gravity in G-Switch 2 and flip at the perfect moment to survive. React instantly, avoid deadly gaps, and compete in intense multiplayer runs.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    }
+    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2FY4F87FSH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2FY4F87FSH');
+</script>
+</head>
+<body>
+    <div id="preloader"><div class="cube-loader"></div></div>
+    <header class="header">
+        <div class="container nav">
+            <div class="logo"><a href="/">Slope<span> 2</span></a></div>
+            <nav class="nav-links">
+                <a href="/all.games/">All Games</a>
+                <a href="/adventure.games/">Adventure</a>
+                <a href="/sports.games/">Sports</a>
+                <a href="/endless-runner.games/">Endless Runner</a>
+            </nav>
+            <div class="header-actions">
+                <form class="header-search" action="/search/" method="get">
+                    <input type="text" name="q" placeholder="Search here..." required autocomplete="off">
+                    <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                </form>
+                <a href="/favorites/" class="theme-toggle" aria-label="My Favorites" title="My Favorites"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a>
+                <button class="theme-toggle" id="btn-random" aria-label="Random Game" title="Random Game"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg></button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode"><svg class="icon-moon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><svg class="icon-sun" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button>
+                <div class="menu-toggle"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero container reveal">
+            <nav class="breadcrumbs"><a href="/">Home</a><span>›</span><strong>G-Switch 2</strong></nav>
+            <h1>G-Switch 2</h1>
+            <p>Flip gravity in G-Switch 2. Run at high speeds, switch directions instantly, and overcome complex obstacles in this gravity-defying multiplayer sequel.</p>
+            
+            <div class="game-container" id="game-container">
+                <div class="game-overlay" id="game-overlay">
+                    <img src="/assets/g-switch-2-cover.webp" alt="G-Switch 2 - Gravity runner" class="game-cover">
+                    <button class="play-btn-large" id="play-btn-large" aria-label="Play Game"><svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="var(--clr-primary)" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></button>
+                </div>
+                <iframe data-src="https://www.twoplayergames.org/gameframe/g-switch-2" id="game-iframe" title="G-Switch 2 Online" allowfullscreen></iframe>
+            </div>
+            <div class="game-actions container">
+                <button class="action-btn" id="btn-theater" title="Theater Mode"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg><span>Expand</span></button>
+                <button class="action-btn" id="btn-fullscreen" title="Fullscreen"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg><span>Fullscreen</span></button>
+                <button class="action-btn" id="btn-favorite" title="Save to Favorites"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><span>Favorite</span></button>
+                <button class="action-btn" id="btn-share" title="Copy Link"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg><span>Share</span></button>
+                <button type="button" class="action-btn" id="btn-how-to" title="How to Play"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg><span>How to Play</span></button>
+
+            </div>
+            <div class="game-how-to-panel" id="game-how-to-panel">
+                <div class="game-how-to-panel-header">
+                    <div class="panel-h3-style">Game Controls</div>
+                    <button type="button" class="game-how-to-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="game-how-to-panel-body">
+                    <ul>
+                        <li><span class="ctrl-action">Mouse Click</span><span class="key-desc">Change gravity</span></li>
+                        <li><span class="ctrl-action">Any Key</span><span class="key-sep">·</span><span class="ctrl-action">Spacebar</span><span class="key-desc">Change gravity</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="games-section container reveal">
+            <h2 class="section-title">Trending Games</h2>
+            <div class="game-grid reveal">
+                <a href="/fall-guyz" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/fall-guyz-cover.webp" alt="Fall Guyz" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Fall Guyz</span></div>
+                </a>
+                <a href="/bloodmoney" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/bloodmoney-cover.webp" alt="BLOODMONEY" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">BLOODMONEY</span></div>
+                </a>
+                <a href="/drift-boss" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/drift-boss-cover.webp" alt="Drift Boss" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Drift Boss</span></div>
+                </a>
+                <a href="/subway-surfers" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/subway-surfers-cover.webp" alt="Subway Surfers" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Subway Surfers</span></div>
+                </a>
+                <a href="/snow-rush-3d" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/snow-rush-3d-cover.webp" alt="Snow Rush 3D" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Snow Rush 3D</span></div>
+                </a>
+                <a href="/slope-multiplayer" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/slope-multiplayer-cover.webp" alt="Slope Multiplayer" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Slope Multiplayer</span></div>
+                </a>
+                <a href="/two-ball-3d-dark" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/two-ball-3d-dark-cover.webp" alt="Two Ball 3D: Dark" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Two Ball 3D: Dark</span></div>
+                </a>
+                <a href="/speed-stars" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/speed-stars-cover.webp" alt="Speed Stars" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Speed Stars</span></div>
+                </a>
+                <a href="/ski-frenzy" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/ski-frenzy-cover.webp" alt="Ski Frenzy" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Ski Frenzy</span></div>
+                </a>
+                <a href="/slope-snowball" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/slope-snowball-cover.webp" alt="Slope Snowball" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Slope Snowball</span></div>
+                </a>
+                <a href="/dinosaur-city-hunting-destroy" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/dinosaur-city-hunting-destroy-cover.webp" alt="Dinosaur City Hunting Destroy" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Dinosaur City Hunting Destroy</span></div>
+                </a>
+                <a href="/survive-lava-for-brainrots" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/survive-lava-for-brainrots-cover.webp" alt="Survive Lava for Brainrots!" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Survive Lava for Brainrots!</span></div>
+                </a>
+                <a href="/finns-ascent" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/finns-ascent-cover.webp" alt="Finn's Ascent" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Finn's Ascent</span></div>
+                </a>
+                <a href="/up-together" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/up-together-cover.webp" alt="Up Together" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Up Together</span></div>
+                </a>
+                <a href="/slope-rider" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="/assets/slope-rider-cover.webp" alt="Slope Rider" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Slope Rider</span></div>
+                </a>
+            </div>
+        </section>
+
+
+        <article class="content-section container reveal">
+            <h2>G-Switch 2</h2>
+            <p>G-Switch 2 is a gravity-defying platform runner that challenges players to survive by flipping gravity instead of jumping. As the direct sequel to the original G-Switch, G-Switch 2 expands the formula with new modes, refined pacing, and multiplayer functionality. The core mechanic remains simple: tap to reverse gravity. However, mastering that single mechanic requires precise timing, rhythm control, and anticipation.</p>
+            <p>Unlike traditional platformers where upward movement depends on jump height, G-Switch 2 redefines traversal by allowing characters to run seamlessly on floors and ceilings. This inversion-based design creates a unique flow that sets G-Switch 2 apart from standard obstacle runners.</p>
+
+            <h2>How G-Switch 2 Works</h2>
+            <p>In G-Switch 2, your character runs automatically. Your only control input is gravity reversal. Pressing a key flips your runner from the floor to the ceiling or vice versa. Mistimed flips result in collision with gaps, spikes, or barriers.</p>
+            <p><strong>Core mechanics in G-Switch 2 include:</strong></p>
+            <ul>
+                <li>Automatic forward movement</li>
+                <li>Instant gravity switching</li>
+                <li>Increasing running speed</li>
+                <li>Tight obstacle spacing</li>
+                <li>Endless survival mode</li>
+            </ul>
+            <p>Because speed scales progressively, G-Switch 2 shifts from reaction-based gameplay to rhythm-based execution. Players must predict upcoming terrain rather than respond at the last second.</p>
+
+            <h2>Game Modes in G-Switch 2</h2>
+            <p>One of the major strengths of G-Switch 2 is its variety of playable modes.</p>
+            <h3>Campaign Mode</h3>
+            <p>Campaign mode in G-Switch 2 introduces structured levels with checkpoints. This allows players to learn gravity timing without immediate full-run resets.</p>
+            <h3>Endless Mode</h3>
+            <p>Endless mode tests endurance. Speed increases gradually, and obstacle frequency intensifies. The objective is to survive as long as possible while maintaining flawless gravity flips.</p>
+            <h3>Multiplayer Mode</h3>
+            <p>G-Switch 2 supports local multiplayer where multiple runners compete on the same screen. The last runner standing wins. This mode adds psychological pressure, as one mistimed gravity switch eliminates a player instantly.</p>
+
+            <h2>Difficulty Scaling and Timing Mastery</h2>
+            <p>G-Switch 2 is built around rhythm synchronization. Early sections allow comfortable gravity switching, but advanced stages demand near-perfect timing.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Stage Phase</th><th>Speed Level</th><th>Obstacle Density</th><th>Timing Margin</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Early</td><td>Moderate</td><td>Basic gaps</td><td>Forgiving</td></tr>
+                        <tr><td>Mid</td><td>Fast</td><td>Alternating ceiling-floor gaps</td><td>Reduced</td></tr>
+                        <tr><td>Late</td><td>Very Fast</td><td>Rapid succession hazards</td><td>Minimal</td></tr>
+                        <tr><td>Extreme</td><td>Maximum</td><td>Micro-timing segments</td><td>Critical</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>As speed increases, G-Switch 2 becomes less about reaction and more about memorizing rhythmic intervals between flips.</p>
+
+            <h2>Strategic Improvement Tips for G-Switch 2</h2>
+            <p>Improving performance in G-Switch 2 requires disciplined timing control.</p>
+            <ul>
+                <li>Focus on obstacle patterns, not individual gaps</li>
+                <li>Develop a rhythm cadence for gravity switching</li>
+                <li>Avoid panic flips when approaching tight sequences</li>
+                <li>Keep visual focus slightly ahead of your runner</li>
+            </ul>
+            <p>In multiplayer mode, staying calm under pressure provides a competitive edge. Many eliminations occur due to rushed gravity inputs rather than mechanical difficulty.</p>
+
+            <h2>Visual &amp; Audio Design</h2>
+            <p>G-Switch 2 uses a minimalist sci-fi aesthetic with clean, high-contrast platforms. The simplified design enhances clarity during high-speed sequences. Audio feedback reinforces gravity switches and collision events, helping players maintain rhythm alignment.</p>
+            <p>Because visual clutter is minimal, G-Switch 2 ensures that difficulty comes from mechanical precision rather than environmental distraction.</p>
+
+            <h2>Games Similar to G-Switch 2</h2>
+            <p>If you enjoy G-Switch 2, consider these related titles:</p>
+            <ul>
+                <li><a href="/two-ball-3d-dark">Two Ball 3D: Dark</a> – Speed-based reflex challenge with competitive mode</li>
+                <li><a href="/slope-multiplayer">Slope Multiplayer</a> – Real-time head-to-head endurance racing</li>
+                <li><a href="/fastlaners">FastLaners</a> – Lane-switch timing runner with escalating pace</li>
+            </ul>
+            <p>Each game emphasizes reaction timing but applies different core mechanics.</p>
+
+            <h2>Why G-Switch 2 Remains Popular</h2>
+            <p>G-Switch 2 maintains long-term appeal because its mechanics are simple yet demanding. With only one core input—gravity switching—the skill ceiling becomes surprisingly high. Multiplayer competition, structured campaign progression, and endless survival challenges give G-Switch 2 strong replay value.</p>
+            <p>For players seeking a precision-based runner that replaces jumping with gravity inversion, G-Switch 2 offers a fast, mechanically disciplined experience where timing consistency determines survival.</p>
+        
+        <!-- Author Box -->
+        <div class="author-box" style="margin-top:2rem;padding:1.5rem;background:var(--bg-glass);border:1px solid rgba(255,255,255,0.1);border-radius:12px;display:flex;align-items:center;gap:1rem;">
+            <div class="author-avatar" style="width:60px;height:60px;border-radius:50%;background:var(--clr-primary);display:flex;justify-content:center;align-items:center;font-weight:bold;color:#111;font-size:1.5rem;">A</div>
+            <div class="author-info">
+                <div class="author-name" style="margin:0 0 0.5rem 0;color:var(--clr-heading);font-weight:bold;">Published by Admin</div>
+                <p style="margin:0;font-size:0.9rem;color:rgba(255,255,255,0.7);">Publish Date: <time itemprop="datePublished" datetime="2026-03-19">2026-03-19</time> &bull; Latest update: <time itemprop="dateModified" datetime="2026-03-19">2026-03-19</time></p>
+            </div>
+        </div>
+    </article>
+    </main>
+        <footer class="footer reveal">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="footer-h3-style">Slope 2</div>
+                <p style="color: rgba(255,255,255,0.7); max-width: 300px;">Your premium destination for the best 3D
+                    endless runners and casual web games. Play instantly in your browser!</p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-h3-style">Categories</div>
+                <div class="footer-links">
+                    <a href="/arcade.games/">Arcade</a>
+                    <a href="/adventure.games/">Adventure</a>
+                    <a href="/sports.games/">Sports</a>
+                    <a href="/endless-runner.games/">Endless Runner</a>
+                    <a href="/skills.games/">Skills</a>
+                    <a href="/all.games/">All Games</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-h3-style">Legal & Info</div>
+                <div class="footer-links">
+                    <a href="/about-us/">About Us</a>
+                    <a href="/contact-us/">Contact Us</a>
+                    <a href="/dmca/">DMCA</a>
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                    <a href="/terms-of-service/">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                &copy; <span id="current-year"></span> Slope 2. All rights reserved. Not affiliated with the original
+                developers of Slope 2.
+            </div>
+        </div>
+    </footer>
+    <script src="/js/games_data.js"></script><script src="/js/main.js"></script>
+
+    <button id="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to ensure you get the best experience on our website. <a href="/privacy-policy/">Learn more</a></p>
+        <button id="btn-accept-cookies" class="btn-accept">Got it!</button>
+    </div>
+</body>
+</html>
+
+
+
+
