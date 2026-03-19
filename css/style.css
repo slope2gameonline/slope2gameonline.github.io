@@ -495,6 +495,12 @@ img {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .hero {
+        padding: 1.5rem 0;
+    }
+}
+
 .hero h1 {
     font-size: 3rem;
     color: var(--clr-primary);
@@ -507,6 +513,27 @@ img {
     margin-bottom: 2rem;
     max-width: 600px;
     margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .content-section {
+        padding: 1.5rem 1rem;
+    }
 }
 
 /* Hide category badges (Adventure, Endless Runner, Skills, etc.) on game pages */
@@ -1384,6 +1411,18 @@ body.theater-mode .game-how-to-panel.open {
     border-radius: 8px;
     border: 1px solid var(--clr-primary);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--clr-primary) transparent;
+}
+
+.content-section .table-wrap::-webkit-scrollbar {
+    height: 6px;
+}
+
+.content-section .table-wrap::-webkit-scrollbar-thumb {
+    background: var(--clr-primary);
+    border-radius: 10px;
 }
 
 .content-section table {
@@ -1411,6 +1450,30 @@ body.theater-mode .game-how-to-panel.open {
 
 .content-section tbody tr:hover {
     background: rgba(69, 242, 72, 0.1);
+}
+
+@media (max-width: 768px) {
+    .content-section th,
+    .content-section td {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-section th,
+    .content-section td {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.75rem;
+        word-break: break-word;
+    }
+    
+    .content-section .table-wrap {
+        margin: 1rem -1.25rem;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
 }
 
 /* FAQ block – question/answer pairs */
@@ -1528,6 +1591,13 @@ body.theater-mode .game-how-to-panel.open {
     padding-top: 1.5rem;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+    .footer-bottom {
+        padding-top: 1rem;
+        font-size: 0.8rem;
+    }
 }
 
 /* --- Preloader --- */
