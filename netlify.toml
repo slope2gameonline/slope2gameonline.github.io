@@ -1,0 +1,334 @@
+# Global Redirects for Game Slugs
+# These rules ensure that:
+# 1. Requests with a trailing slash (e.g., /game/) are 301-redirected to the non-slash version (/game).
+# 2. Requests to /game are internally served by /game/index.html (200 OK) so the URL stays clean in the browser.
+
+[[redirects]]
+  from = "/bloodmoney/"
+  to = "/bloodmoney"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/bloodmoney"
+  to = "/bloodmoney/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/dinosaur-city-hunting-destroy/"
+  to = "/dinosaur-city-hunting-destroy"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/dinosaur-city-hunting-destroy"
+  to = "/dinosaur-city-hunting-destroy/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/drift-boss/"
+  to = "/drift-boss"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/drift-boss"
+  to = "/drift-boss/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/drift-hunters-2/"
+  to = "/drift-hunters-2"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/drift-hunters-2"
+  to = "/drift-hunters-2/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/extreme-ball-balancer-3d/"
+  to = "/extreme-ball-balancer-3d"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/extreme-ball-balancer-3d"
+  to = "/extreme-ball-balancer-3d/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/fall-guyz/"
+  to = "/fall-guyz"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/fall-guyz"
+  to = "/fall-guyz/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/fastlaners/"
+  to = "/fastlaners"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/fastlaners"
+  to = "/fastlaners/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/finns-ascent/"
+  to = "/finns-ascent"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/finns-ascent"
+  to = "/finns-ascent/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/g-switch-2/"
+  to = "/g-switch-2"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/g-switch-2"
+  to = "/g-switch-2/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/gate-rusher-2/"
+  to = "/gate-rusher-2"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/gate-rusher-2"
+  to = "/gate-rusher-2/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/parkour-craft-noob-steve/"
+  to = "/parkour-craft-noob-steve"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/parkour-craft-noob-steve"
+  to = "/parkour-craft-noob-steve/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/santa-run/"
+  to = "/santa-run"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/santa-run"
+  to = "/santa-run/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/ski-frenzy/"
+  to = "/ski-frenzy"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ski-frenzy"
+  to = "/ski-frenzy/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/slide-down-slope/"
+  to = "/slide-down-slope"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/slide-down-slope"
+  to = "/slide-down-slope/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/slope-2/"
+  to = "/slope-2"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/slope-2"
+  to = "/slope-2/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/slope-3-online/"
+  to = "/slope-3-online"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/slope-3-online"
+  to = "/slope-3-online/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/slope-multiplayer/"
+  to = "/slope-multiplayer"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/slope-multiplayer"
+  to = "/slope-multiplayer/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/slope-rider/"
+  to = "/slope-rider"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/slope-rider"
+  to = "/slope-rider/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/slope-snowball/"
+  to = "/slope-snowball"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/slope-snowball"
+  to = "/slope-snowball/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/slope-spooky/"
+  to = "/slope-spooky"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/slope-spooky"
+  to = "/slope-spooky/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/snow-rider-2/"
+  to = "/snow-rider-2"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/snow-rider-2"
+  to = "/snow-rider-2/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/snow-rush-3d/"
+  to = "/snow-rush-3d"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/snow-rush-3d"
+  to = "/snow-rush-3d/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/speed-stars/"
+  to = "/speed-stars"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/speed-stars"
+  to = "/speed-stars/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/stunt-bike-extreme/"
+  to = "/stunt-bike-extreme"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/stunt-bike-extreme"
+  to = "/stunt-bike-extreme/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/subway-surfers/"
+  to = "/subway-surfers"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/subway-surfers"
+  to = "/subway-surfers/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/subway-surfers-winter-holiday/"
+  to = "/subway-surfers-winter-holiday"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/subway-surfers-winter-holiday"
+  to = "/subway-surfers-winter-holiday/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/super-traffic-racer/"
+  to = "/super-traffic-racer"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/super-traffic-racer"
+  to = "/super-traffic-racer/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/survive-lava-for-brainrots/"
+  to = "/survive-lava-for-brainrots"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/survive-lava-for-brainrots"
+  to = "/survive-lava-for-brainrots/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/two-ball-3d-dark/"
+  to = "/two-ball-3d-dark"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/two-ball-3d-dark"
+  to = "/two-ball-3d-dark/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/up-together/"
+  to = "/up-together"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/up-together"
+  to = "/up-together/index.html"
+  status = 200
+  force = true

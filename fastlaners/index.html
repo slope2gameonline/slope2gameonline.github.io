@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastLaners</title>
+    <meta name="description" content="Race through busy highways in FastLaners and weave between traffic at high speed. Stay focused, avoid crashes, and push your driving skills further.">
+    <link rel="icon" type="image/webp" href="/favicon.webp">
+    <link rel="canonical" href="https://slope2game.online/fastlaners">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://slope2game.online/fastlaners">
+    <meta property="og:title" content="FastLaners">
+    <meta property="og:description" content="Race through busy highways in FastLaners and weave between traffic at high speed. Stay focused, avoid crashes, and push your driving skills further.">
+    <meta property="og:image" content="https://slope2game.online/assets/fastlaners-cover.webp">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "FastLaners",
+      "description": "Race through busy highways in FastLaners and weave between traffic at high speed. Stay focused, avoid crashes, and push your driving skills further.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Slope 2 Online"
+      },
+      "datePublished": "2026-03-19T08:07:00.000Z",
+      "dateModified": "2026-03-19T08:07:00.000Z",
+      "author": {
+        "@type": "Person",
+        "name": "Admin"
+      }
+    }
+    </script>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FastLaners">
+    <meta name="twitter:description" content="Race through busy highways in FastLaners and weave between traffic at high speed. Stay focused, avoid crashes, and push your driving skills further.">
+    <meta name="twitter:image" content="https://slope2game.online/assets/fastlaners-cover.webp">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://slope2game.online/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "FastLaners"
+      }]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "FastLaners",
+      "operatingSystem": "Any",
+      "applicationCategory": "GameApplication",
+      "description": "Race through busy highways in FastLaners and weave between traffic at high speed. Stay focused, avoid crashes, and push your driving skills further.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="preloader"><div class="cube-loader"></div></div>
+    <header class="header">
+        <div class="container nav">
+            <div class="logo"><a href="/">Slope<span> 2</span></a></div>
+            <nav class="nav-links">
+                <a href="/all.games/">All Games</a>
+                <a href="/adventure.games/">Adventure</a>
+                <a href="/sports.games/">Sports</a>
+                <a href="/endless-runner.games/">Endless Runner</a>
+            </nav>
+            <div class="header-actions">
+                <form class="header-search" action="/search/" method="get">
+                    <input type="text" name="q" placeholder="Search here..." required autocomplete="off">
+                    <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+                </form>
+                <a href="/favorites/" class="theme-toggle" aria-label="My Favorites" title="My Favorites"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a>
+                <button class="theme-toggle" id="btn-random" aria-label="Random Game" title="Random Game"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg></button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode"><svg class="icon-moon" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><svg class="icon-sun" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button>
+                <div class="menu-toggle"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero container reveal">
+            <nav class="breadcrumbs"><a href="/">Home</a><span>›</span><strong>FastLaners</strong></nav>
+            <h1>FastLaners</h1>
+            <p>Choose your lane and speed ahead in FastLaners. Dodge traffic, collect power-ups, and dominate the road in this action-packed highway racing game.</p>
+            
+            <div class="game-container" id="game-container">
+                <div class="game-overlay" id="game-overlay">
+                    <img src="../assets/fastlaners-cover.webp" alt="FastLaners - Racing" class="game-cover">
+                    <button class="play-btn-large" id="play-btn-large" aria-label="Play Game"><svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2" fill="var(--clr-primary)" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></button>
+                </div>
+                <iframe data-src="https://html5.gamemonetize.co/fiaa5lho6mt9zuyzakdhzo84t1yy2nuh/" id="game-iframe" title="FastLaners Online" allowfullscreen></iframe>
+            </div>
+            <div class="game-actions container">
+                <button class="action-btn" id="btn-theater" title="Theater Mode"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg><span>Expand</span></button>
+                <button class="action-btn" id="btn-fullscreen" title="Fullscreen"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg><span>Fullscreen</span></button>
+                <button class="action-btn" id="btn-favorite" title="Save to Favorites"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg><span>Favorite</span></button>
+                <button class="action-btn" id="btn-share" title="Copy Link"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg><span>Share</span></button>
+                <button type="button" class="action-btn" id="btn-how-to" title="How to Play"><svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg><span>How to Play</span></button>
+
+            </div>
+            <div class="game-how-to-panel" id="game-how-to-panel">
+                <div class="game-how-to-panel-header">
+                    <div class="panel-h3-style">Game Controls</div>
+                    <button type="button" class="game-how-to-close" aria-label="Close">&times;</button>
+                </div>
+                <div class="game-how-to-panel-body">
+                    <ul>
+                        <li><span class="key">←</span><span class="key-sep">·</span><span class="key">A</span><span class="key-desc">Move left</span></li>
+                        <li><span class="key">→</span><span class="key-sep">·</span><span class="key">D</span><span class="key-desc">Move right</span></li>
+                        <li><span class="key">↑</span><span class="key-sep">·</span><span class="key">W</span><span class="key-desc">Accelerate · Jump (if available)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="games-section container reveal">
+            <h2 class="section-title">Trending Games</h2>
+            <div class="game-grid reveal">
+                <a href="/fall-guyz" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/fall-guyz-cover.webp" alt="Fall Guyz" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Fall Guyz</span></div>
+                </a>
+                <a href="/bloodmoney" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/bloodmoney-cover.webp" alt="BLOODMONEY" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">BLOODMONEY</span></div>
+                </a>
+                <a href="/drift-boss" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/drift-boss-cover.webp" alt="Drift Boss" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Drift Boss</span></div>
+                </a>
+                <a href="/subway-surfers" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/subway-surfers-cover.webp" alt="Subway Surfers" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Subway Surfers</span></div>
+                </a>
+                <a href="/snow-rush-3d" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/snow-rush-3d-cover.webp" alt="Snow Rush 3D" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Snow Rush 3D</span></div>
+                </a>
+                <a href="/slope-multiplayer" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/slope-multiplayer-cover.webp" alt="Slope Multiplayer" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Slope Multiplayer</span></div>
+                </a>
+                <a href="/two-ball-3d-dark" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/two-ball-3d-dark-cover.webp" alt="Two Ball 3D: Dark" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Two Ball 3D: Dark</span></div>
+                </a>
+                <a href="/speed-stars" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/speed-stars-cover.webp" alt="Speed Stars" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Speed Stars</span></div>
+                </a>
+                <a href="/ski-frenzy" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/ski-frenzy-cover.webp" alt="Ski Frenzy" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Ski Frenzy</span></div>
+                </a>
+                <a href="/slope-snowball" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/slope-snowball-cover.webp" alt="Slope Snowball" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Slope Snowball</span></div>
+                </a>
+                <a href="/dinosaur-city-hunting-destroy" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/dinosaur-city-hunting-destroy-cover.webp" alt="Dinosaur City Hunting Destroy" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Dinosaur City Hunting Destroy</span></div>
+                </a>
+                <a href="/survive-lava-for-brainrots" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/survive-lava-for-brainrots-cover.webp" alt="Survive Lava for Brainrots!" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Survive Lava for Brainrots!</span></div>
+                </a>
+                <a href="/finns-ascent" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/finns-ascent-cover.webp" alt="Finn's Ascent" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Finn's Ascent</span></div>
+                </a>
+                <a href="/up-together" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/up-together-cover.webp" alt="Up Together" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Up Together</span></div>
+                </a>
+                <a href="/slope-rider" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/slope-rider-cover.webp" alt="Slope Rider" class="game-thumb" loading="lazy">
+                    <div class="game-info"><span class="game-title">Slope Rider</span></div>
+                </a>
+            </div>
+        </section>
+
+
+        <article class="content-section container reveal">
+            <h2>FastLaners</h2>
+            <p>FastLaners is a high-speed action racing game that combines urban street driving with combat mechanics. Unlike traditional racing titles that focus purely on lap times, FastLaners integrates weapon systems, obstacle destruction, and tactical vehicle selection into every run. Players must choose the fastest vehicle, equip the strongest weapons, and survive chaotic city streets filled with hazards and aggressive opponents.</p>
+            <p>FastLaners is currently playable online across browser-based platforms such as Y8 Games, making it accessible without installation while maintaining competitive gameplay intensity.</p>
+
+            <h2>What Makes FastLaners Different?</h2>
+            <p>FastLaners is not just about speed. It is about speed under pressure. Every race blends precision driving with offensive strategy. You are not only avoiding traffic—you are actively clearing your path.</p>
+            <p><strong>Core characteristics of FastLaners include:</strong></p>
+            <ul>
+                <li>High-speed urban track environments</li>
+                <li>Weapon-based vehicle combat</li>
+                <li>Dynamic street obstacles</li>
+                <li>Aggressive AI opponents</li>
+                <li>Progressive difficulty scaling</li>
+            </ul>
+            <p>Because FastLaners merges racing and shooting mechanics, players must divide attention between steering accuracy and combat timing.</p>
+
+            <h2>Gameplay Structure in FastLaners</h2>
+            <p>FastLaners operates on a forward-scrolling race format where survival and dominance matter as much as raw acceleration.</p>
+            <h3>Vehicle Selection Strategy</h3>
+            <p>Choosing the right car in FastLaners impacts handling, top speed, and durability. Faster vehicles allow quick overtakes but may sacrifice stability. Heavier vehicles offer better collision resistance but require sharper control.</p>
+            <h3>Weapon Integration</h3>
+            <p>FastLaners allows players to equip powerful weapons to eliminate rivals or destroy obstacles. Effective weapon usage reduces traffic pressure and opens safer racing lines.</p>
+            <h3>Obstacle Navigation</h3>
+            <p>City streets in FastLaners are filled with barriers, traffic clusters, and destructible elements. Precise steering prevents unnecessary damage while maintaining momentum.</p>
+
+            <h2>Skill Requirements for Competitive Play</h2>
+            <p>FastLaners rewards mechanical control and reaction speed. Success depends on three performance pillars:</p>
+            <ul>
+                <li>Steering precision at high velocity</li>
+                <li>Efficient weapon deployment</li>
+                <li>Situational awareness under pressure</li>
+            </ul>
+            <p>Because traffic density increases as speed builds, hesitation often leads to collisions. Experienced FastLaners players maintain lane discipline and anticipate obstacle placement ahead of time.</p>
+
+            <h2>Core Features of FastLaners</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>Feature</th><th>Gameplay Impact</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Action Racing Format</td><td>Combines speed and combat</td></tr>
+                        <tr><td>Vehicle Customization</td><td>Strategic car selection</td></tr>
+                        <tr><td>Weapon Systems</td><td>Offensive racing advantage</td></tr>
+                        <tr><td>Street Environment</td><td>Urban obstacle variation</td></tr>
+                        <tr><td>Online Accessibility</td><td>Instant browser play</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>FastLaners stands out because it merges arcade intensity with tactical customization.</p>
+
+            <h2>Advanced Tips to Dominate FastLaners</h2>
+            <p>To maximize performance in FastLaners:</p>
+            <ul>
+                <li>Stay centered when possible to preserve reaction options</li>
+                <li>Fire weapons proactively rather than reactively</li>
+                <li>Avoid unnecessary side movements at maximum speed</li>
+                <li>Use weapon bursts strategically during traffic clusters</li>
+                <li>Prioritize survival over risky overtakes</li>
+            </ul>
+            <p>FastLaners becomes significantly harder in later stages as opponent aggression and obstacle frequency increase.</p>
+
+            <h2>Comparison With Other Racing Titles</h2>
+            <p>FastLaners differs from pure racing simulators because it emphasizes arcade aggression. Compared to <a href="/super-traffic-racer">Super Traffic Racer</a>, which focuses on high-speed lane navigation, FastLaners integrates combat mechanics for a more chaotic experience. Players who enjoy stunt-based racing may also explore <a href="/stunt-bike-extreme">Stunt Bike Extreme</a>, but FastLaners remains more combat-oriented.</p>
+
+            <h2>Why FastLaners Appeals to Action Players</h2>
+            <p>FastLaners appeals to players who prefer:</p>
+            <ul>
+                <li>Fast reaction-based racing</li>
+                <li>Weapon-enhanced competition</li>
+                <li>Urban street settings</li>
+                <li>Quick online access</li>
+            </ul>
+            <p>The combination of customizable vehicles, aggressive gameplay pacing, and street-level obstacle design ensures that FastLaners remains intense from start to finish.</p>
+
+            <h2>Final Evaluation</h2>
+            <p>FastLaners successfully merges high-speed racing with combat-driven action. By allowing players to choose the fastest vehicles and strongest weapons, FastLaners transforms every race into a tactical battle for dominance. Its accessible browser format and escalating difficulty curve make FastLaners a compelling option for players seeking adrenaline-fueled racing combined with offensive strategy.</p>
+        
+        <!-- Author Box -->
+        <div class="author-box" style="margin-top:2rem;padding:1.5rem;background:var(--bg-glass);border:1px solid rgba(255,255,255,0.1);border-radius:12px;display:flex;align-items:center;gap:1rem;">
+            <div class="author-avatar" style="width:60px;height:60px;border-radius:50%;background:var(--clr-primary);display:flex;justify-content:center;align-items:center;font-weight:bold;color:#111;font-size:1.5rem;">A</div>
+            <div class="author-info">
+                <div class="author-name" style="margin:0 0 0.5rem 0;color:var(--clr-heading);font-weight:bold;">Published by Admin</div>
+                <p style="margin:0;font-size:0.9rem;color:rgba(255,255,255,0.7);">Publish Date: <time itemprop="datePublished" datetime="2026-03-19">2026-03-19</time> &bull; Latest update: <time itemprop="dateModified" datetime="2026-03-19">2026-03-19</time></p>
+            </div>
+        </div>
+    </article>
+    </main>
+        <footer class="footer reveal">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="footer-h3-style">Slope 2</div>
+                <p style="color: rgba(255,255,255,0.7); max-width: 300px;">Your premium destination for the best 3D
+                    endless runners and casual web games. Play instantly in your browser!</p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-h3-style">Categories</div>
+                <div class="footer-links">
+                    <a href="/arcade.games/">Arcade</a>
+                    <a href="/adventure.games/">Adventure</a>
+                    <a href="/sports.games/">Sports</a>
+                    <a href="/endless-runner.games/">Endless Runner</a>
+                    <a href="/skills.games/">Skills</a>
+                    <a href="/all.games/">All Games</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-h3-style">Legal & Info</div>
+                <div class="footer-links">
+                    <a href="/about-us/">About Us</a>
+                    <a href="/contact-us/">Contact Us</a>
+                    <a href="/dmca/">DMCA</a>
+                    <a href="/privacy-policy/">Privacy Policy</a>
+                    <a href="/terms-of-service/">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                &copy; <span id="current-year"></span> Slope 2. All rights reserved. Not affiliated with the original
+                developers of Slope 2.
+            </div>
+        </div>
+    </footer>
+    <script src="../js/games_data.js"></script><script src="../js/main.js"></script>
+
+    <button id="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg></button>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to ensure you get the best experience on our website. <a href="/privacy-policy/">Learn more</a></p>
+        <button id="btn-accept-cookies" class="btn-accept">Got it!</button>
+    </div>
+</body>
+</html>
+
+
+
+

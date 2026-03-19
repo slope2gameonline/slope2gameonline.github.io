@@ -1,0 +1,67 @@
+
+        <section class="games-section container reveal">
+            <h2 class="section-title">Trending Games</h2>
+            <div class="game-grid reveal">
+                <a href="/fall-guyz/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/fall-guyz-cover.png" alt="Fall Guyz" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Fall Guyz</h3></div>
+                </a>
+                <a href="/bloodmoney/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/bloodmoney-cover.png" alt="BLOODMONEY" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">BLOODMONEY</h3></div>
+                </a>
+                <a href="/drift-boss/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/drift-boss-cover.png" alt="Drift Boss" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Drift Boss</h3></div>
+                </a>
+                <a href="/subway-surfers/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/subway-surfers-cover.png" alt="Subway Surfers" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Subway Surfers</h3></div>
+                </a>
+                <a href="/snow-rush-3d/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/snow-rush-3d-cover.png" alt="Snow Rush 3D" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Snow Rush 3D</h3></div>
+                </a>
+                <a href="/slope-multiplayer/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/slope-multiplayer-cover.png" alt="Slope Multiplayer" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Slope Multiplayer</h3></div>
+                </a>
+                <a href="/two-ball-3d-dark/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/two-ball-3d-dark-cover.png" alt="Two Ball 3D: Dark" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Two Ball 3D: Dark</h3></div>
+                </a>
+                <a href="/speed-stars/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/speed-stars-cover.png" alt="Speed Stars" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Speed Stars</h3></div>
+                </a>
+                <a href="/ski-frenzy/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/ski-frenzy-cover.png" alt="Ski Frenzy" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Ski Frenzy</h3></div>
+                </a>
+                <a href="/slope-snowball/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/slope-snowball-cover.png" alt="Slope Snowball" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Slope Snowball</h3></div>
+                </a>
+                <a href="/dinosaur-city-hunting-destroy/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/dinosaur-city-hunting-destroy-cover.png" alt="Dinosaur City Hunting Destroy" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Dinosaur City Hunting Destroy</h3></div>
+                </a>
+                <a href="/survive-lava-for-brainrots/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/survive-lava-for-brainrots-cover.png" alt="Survive Lava for Brainrots!" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Survive Lava for Brainrots!</h3></div>
+                </a>
+                <a href="/finns-ascent/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/finns-ascent-cover.png" alt="Finn's Ascent" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Finn's Ascent</h3></div>
+                </a>
+                <a href="/up-together/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/up-together-cover.png" alt="Up Together" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Up Together</h3></div>
+                </a>
+                <a href="/slope-rider/" class="game-card"><div class='hot-badge'>HOT</div>
+                    <img src="../assets/slope-rider-cover.png" alt="Slope Rider" class="game-thumb" loading="lazy">
+                    <div class="game-info"><h3 class="game-title">Slope Rider</h3></div>
+                </a>
+            </div>
+        </section>
+

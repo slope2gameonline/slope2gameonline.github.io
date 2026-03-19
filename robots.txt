@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /cdn-cgi/
+Disallow: /embed/
+Disallow: /search
+Disallow: /favorites
+Disallow: /?*
+Allow: /
+
+Sitemap: https://slope2game.online/sitemap.xml

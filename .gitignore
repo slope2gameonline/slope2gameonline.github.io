@@ -1,0 +1,20 @@
+.vscode/
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Ignore root-level audit/utility scripts (keep js/ folder)
+/*.js
+/*.json
+!/manifest.json
+/*.txt
+/*.ps1
+/*.log
+
+# But keep the core site files
+!/index.html
+!/404.html
+!/robots.txt
+!/sitemap.xml
+!/netlify.toml
+!/sw.js
